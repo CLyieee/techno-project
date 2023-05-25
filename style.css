@@ -1,0 +1,147 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #ffcc00;
+  padding: 40px;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-list li {
+  margin: 0 10px;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #ff0000;
+}
+
+#carList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* Add this line */
+  height: 100vh;
+  /* Optional: Adjust the height as needed */
+}
+
+
+.car {
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.car:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.car img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.car h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.car p {
+  margin-bottom: 10px;
+}
+
+.car button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.car button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.rented {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+  .car {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .car {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.receipt {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.receipt h3 {
+  margin-top: 0;
+}
+
+.receipt p {
+  margin-bottom: 5px;
+}
+
+.receipt strong {
+  font-weight: bold;
+}

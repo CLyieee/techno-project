@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Car Rental</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar" data-navbar>
+    <ul class="navbar-list">
+      <li>
+        <a href="index.html" class="navbar-link">Home</a>
+      </li>
+      <li>
+        <a href="#" class="navbar-link">About</a>
+      </li>
+      <li>
+        <a href="#" class="navbar-link">Services</a>
+      </li>
+      <li>
+        <a href="car-rental.html" class="navbar-link">Car Rental</a>
+      </li>
+      <li>
+        <a href="#" class="navbar-link">Members</a>
+      </li>
+    </ul>
+  </nav>
+
+  <h1>Car Rental</h1>
+  <div class="hero-bg"></div>
+
+  <div id="carList">
+    <div class="car">
+      <img src="PngItem_1866042.png" alt="Car 1">
+      <h2>Car 1</h2>
+      <p class="price">$50 per day</p>
+      <button onclick="rentCar(1)">Rent</button>
+    </div>
+    <div class="car">
+      <img src="PngItem_99157.png" alt="Car 2">
+      <h2>Car 2</h2>
+      <p class="price">$60 per day</p>
+      <button onclick="rentCar(2)">Rent</button>
+    </div>
+    <div class="car">
+      <img src="PngItem_1866042.png" alt="Car 3">
+      <h2>Car 3</h2>
+      <p class="price">$55 per day</p>
+      <button onclick="rentCar(3)">Rent</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
